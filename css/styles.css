@@ -1,21 +1,96 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  }
+
 ol,
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  
 }
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 button {
   cursor: pointer;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   color:#434455;
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
+
+
 /* =======header styles====== */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header {
+border-bottom: 1px solid #e7e9fc;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+ padding: 24px 0;
+ margin-right: 76px;
+}
+
+ .menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+ }
+
+ .menu-link {
+  display: block;
+  padding: 24px 0;
+ }
+
 .page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -41,20 +116,46 @@ body {
 .menu-link:active {
     text-decoration: underline;}
 
-.contact {font-style: normal;}
+.contact {
+  margin-left: auto;
+  font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+    
 .contact-list-item-link {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    }
+  display: block;  
+  padding: 24px 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  }
 .contact-list-item-link:hover,
 .contact-list-item-link:focus
    {color: #404bbf;}
 /*======/header styles=======*/
 
 /*======main styles==========*/
+.padding-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /*======order section========*/
 .order-section {background-color: #2e2f42;}
+.order-container {
+  width: 496px;
+  padding: 188px 0 188px;
+  margin: 0 auto;
+}
+
+.order-section {
+  margin-bottom: 60px;
+}
+
 .main-title {
     font-size: 56px;
     line-height: 1.07;
@@ -62,21 +163,42 @@ body {
     text-align: center;
     color: #ffffff;}
 
-.order-btn {
+.order-btn { 
+    display: block;
+    margin: 0 auto;
+
     font-family: inherit;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background: #4d5ae5;
-    color: #fff;}
-
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+      padding: 16px 30px;
+      width: 169px;
+      height: 56px;
+  }
+  
 .order-btn:hover,
 .order-btn:focus 
 {background: #404bbf;}
 /*========/order section======*/
 
 /*========ways to achieve======*/
-.achieve-item-title {font-weight: 500;
+
+
+.achieve-list {
+  display: flex;
+  gap: 24px;
+  }
+
+.achieve-list-item {
+  width: calc((100% - 72px)/4);
+}
+
+.achieve-item-title {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -89,7 +211,11 @@ body {
 /*========/ways to achieve======*/
 
 /*========our team======*/
-.team {background-color: #F4F4FD;}
+.team {
+  background-color: #F4F4FD;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 
 .team-title {
     font-size: 36px;
@@ -99,7 +225,15 @@ body {
     color: #2e2f42;
     text-transform: capitalize;}
 
-.team-list-item {background-color: #FFFFFF;}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.team-list-item {
+  width: calc((100% - 72px)/4);
+  background-color: #FFFFFF;}
 
 .team-list-name {font-weight: 500;
     font-size: 20px;
@@ -124,6 +258,17 @@ body {
     text-transform: capitalize;
     color: #2e2f42;}
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  }
+
+.portfolio-list-item {
+  width: calc((100% - 48px)/3);
+}
+
 .portfolio-item-title {font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -137,11 +282,21 @@ body {
 /*========/our portfolio======*/
 
 /*========footer======*/
-.footer-color {background-color: #2e2f42;}
+.footer-color {
+  margin-top: 60px;
+  background-color: #2e2f42;}
 
 .logotext-bottom {color: #f4f4fd;}
 
+.page-logo-footer {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 16px;
+}
+
 .footertext {
+    width: 264px;
+    padding-bottom: 100px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;}
