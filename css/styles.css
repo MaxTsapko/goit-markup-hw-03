@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6,
-p, {
+p {
   margin: 0;
   }
 
@@ -192,6 +192,7 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .achieve-item-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -212,6 +213,8 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .team-title {
+    padding-top: 60px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -229,7 +232,10 @@ border-bottom: 1px solid #e7e9fc;
   width: calc((100% - 72px)/4);
   background-color: #FFFFFF;}
 
-.team-list-name {font-weight: 500;
+.team-list-name {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -237,6 +243,7 @@ border-bottom: 1px solid #e7e9fc;
     color: #2e2f42;}
 
 .team-list-job {
+    margin-bottom: 32px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
@@ -245,6 +252,7 @@ border-bottom: 1px solid #e7e9fc;
 
  /*========our portfolio======*/
 .portfolio-title {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
