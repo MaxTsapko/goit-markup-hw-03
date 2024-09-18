@@ -138,7 +138,6 @@ border-bottom: 1px solid #e7e9fc;
 /*======order section========*/
 .order-section {
   padding: 188px 0;
-  margin-bottom: 120px;
   background-color: #2e2f42;}
   
 /*.order-container {
@@ -170,7 +169,7 @@ border-bottom: 1px solid #e7e9fc;
     color: #fff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 16px 30px;
+    padding: 16px 32px;
     min-width: 169px;
     height: 56px;
   }
@@ -183,7 +182,7 @@ border-bottom: 1px solid #e7e9fc;
 /*========ways to achieve======*/
 
 .ways-to-achieve {
-  margin: 120px 0;
+  padding: 120px 0;
 }
 
 .achieve-list {
@@ -258,9 +257,15 @@ border-bottom: 1px solid #e7e9fc;
  /*========/our team======*/
 
  /*========our portfolio======*/
-.portfolio-title {
-  margin-top: 120px;  
-  margin-bottom: 72px;
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+ .portfolio-title {
+  
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
