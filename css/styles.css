@@ -134,21 +134,23 @@ border-bottom: 1px solid #e7e9fc;
 /*======/header styles=======*/
 
 /*======main styles==========*/
-.padding-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 /*======order section========*/
 .order-section {
+  padding: 188px 0;
   margin-bottom: 120px;
   background-color: #2e2f42;}
-.order-container {
-  max-width: 496px;
-  padding: 188px 0;
+  
+/*.order-container {
+  
+  
   margin: 0 auto;
-}
+}*/
 
 .main-title {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
@@ -277,8 +279,14 @@ border-bottom: 1px solid #e7e9fc;
   width: calc((100% - 48px)/3);
 }
 
+.app-description {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-item-title {
-  padding: 32px 0 8px 16px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -286,7 +294,6 @@ border-bottom: 1px solid #e7e9fc;
   color: #2e2f42;}
 
 .portfolio-item-text {
-  padding: 0 0 32px 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;}
@@ -294,20 +301,18 @@ border-bottom: 1px solid #e7e9fc;
 
 /*========footer======*/
 .footer-color {
-  margin-top: 60px;
+  padding: 100px 0;
   background-color: #2e2f42;}
 
 .logotext-bottom {color: #f4f4fd;}
 
 .page-logo-footer {
-  display: block;
-  padding-top: 100px;
-  padding-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footertext {
     width: 264px;
-    padding-bottom: 100px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;}
